@@ -151,7 +151,7 @@ main() {
                 mpv --geometry=100x100 --title="Farge" $FNAME &>/dev/null &
                 ;;
             "feh")
-                feh --geometry=100x100 --title="Farge" $FNAME &>/dev/null &
+                feh -x --geometry=100x100 --title="Farge" $FNAME &>/dev/null &
                 ;;
             "sxiv")
                 sxiv -g=100x100 -b -N "Farge" $FNAME &>/dev/null &
