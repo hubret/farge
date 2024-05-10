@@ -144,7 +144,7 @@ main() {
             convert - -format '%[pixel:p{0,0}]' txt:- | tail -n1 |
             grep '#' | awk '{print $3}')
     else
-        HEX_COLOR=$(xcolor --format hex)
+        HEX_COLOR=$(xcolor --format hex --preview-size 100)
     fi
 
     # If no color is chosen, then exit
